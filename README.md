@@ -53,15 +53,6 @@ Copia `themes/mmoui_personal_theme.yaml` in `<config>/themes/`, poi come al punt
 
 Le modifiche fatte direttamente in `<config>/themes/` vengono sovrascritte al prossimo aggiornamento da HACS: meglio farle qui nel repository.
 
-## Prova in locale con Docker
-
-```bash
-docker compose up -d
-# → http://localhost:8123
-```
-
-Al primo avvio crea l'utente dall'onboarding. Il compose avvia Home Assistant con l'integrazione `demo` (luci, clima, media player, sensori finti), una plancia di esempio **MMOUi** nella sidebar e il tema montato da `themes/`. Dopo aver modificato il tema lancia `frontend.reload_themes` e ricarica la pagina. I dati di Home Assistant restano in `dev/config/` e sono ignorati da git.
-
 ## Note
 
 - La pagina di login di Home Assistant (`/auth/authorize`) non è personalizzabile con i temi.
