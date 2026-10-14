@@ -1,0 +1,4 @@
+.idea
+dev/config/*
+!dev/config/configuration.yaml
+!dev/config/dashboard.yaml

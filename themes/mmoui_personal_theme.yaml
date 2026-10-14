@@ -1,0 +1,151 @@
+# Home Assistant – tema "MMOUi Personal Theme"
+# Stessa palette del tema di login Keycloak/Grafana: ciano → indaco → viola su blu notte.
+# Sidebar e barra superiore sono sempre scure (come il pannello brand del login),
+# il contenuto segue la modalità chiara/scura scelta nel profilo.
+# Le personalizzazioni principali sono le variabili qui sotto.
+
+MMOUi Personal Theme:
+  # ---- Palette ----
+  mmoui-accent-1: "#22d3ee"
+  mmoui-accent-2: "#6366f1"
+  mmoui-accent-3: "#a855f7"
+  mmoui-night: "#070b1a"
+  mmoui-night-text: "#e6e9f5"
+  mmoui-night-muted: "#9aa3c0"
+  mmoui-radius: "16px"
+
+  primary-color: "var(--mmoui-accent-2)"
+  rgb-primary-color: "99, 102, 241"
+  light-primary-color: "#c7c8fb"
+  dark-primary-color: "#4f46e5"
+  accent-color: "var(--mmoui-accent-3)"
+  rgb-accent-color: "168, 85, 247"
+
+  # ---- Font ----
+  primary-font-family: 'Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+  paper-font-common-code_-_font-family: 'ui-monospace, "JetBrains Mono", "Fira Code", Menlo, Consolas, monospace'
+  ha-font-family-body: "var(--primary-font-family)"
+  ha-font-family-heading: "var(--primary-font-family)"
+  mdc-typography-font-family: "var(--primary-font-family)"
+
+  # ---- Barra superiore (scura, come il pannello brand) ----
+  app-header-background-color: "var(--mmoui-night)"
+  app-header-text-color: "var(--mmoui-night-text)"
+  app-header-selection-bar-color: "var(--mmoui-accent-1)"
+  app-header-edit-background-color: "#1e1b4b"
+  app-header-edit-text-color: "#ffffff"
+
+  # ---- Sidebar (scura) ----
+  sidebar-background-color: "var(--mmoui-night)"
+  sidebar-menu-button-background-color: "var(--mmoui-night)"
+  sidebar-text-color: "var(--mmoui-night-text)"
+  sidebar-icon-color: "var(--mmoui-night-muted)"
+  sidebar-selected-text-color: "#ffffff"
+  sidebar-selected-icon-color: "var(--mmoui-accent-1)"
+  sidebar-menu-button-text-color: "var(--mmoui-night-text)"
+  sidebar-border-color: "rgba(255, 255, 255, 0.08)"
+
+  # ---- Card ----
+  ha-card-border-radius: "var(--mmoui-radius)"
+  ha-card-border-width: "1px"
+  ha-dialog-border-radius: "20px"
+  ha-badge-border-radius: "999px"
+  ha-tile-icon-border-radius: "12px"
+  mdc-shape-small: "12px"
+  mdc-shape-medium: "var(--mmoui-radius)"
+
+  # ---- Controlli ----
+  switch-checked-color: "var(--mmoui-accent-2)"
+  switch-checked-button-color: "#ffffff"
+  switch-checked-track-color: "var(--mmoui-accent-2)"
+  slider-color: "var(--mmoui-accent-2)"
+  slider-bar-color: "rgba(var(--rgb-primary-color), 0.25)"
+  mdc-theme-primary: "var(--mmoui-accent-2)"
+  mdc-theme-secondary: "var(--mmoui-accent-3)"
+  mdc-checkbox-unchecked-color: "var(--secondary-text-color)"
+  mdc-radio-unchecked-color: "var(--secondary-text-color)"
+
+  # ---- Stati ----
+  state-icon-color: "var(--mmoui-accent-2)"
+  state-active-color: "var(--mmoui-accent-2)"
+  state-icon-active-color: "var(--mmoui-accent-1)"
+  state-icon-unavailable-color: "var(--disabled-text-color)"
+  paper-item-icon-color: "var(--state-icon-color)"
+  paper-item-icon-active-color: "var(--state-icon-active-color)"
+
+  # ---- Alert (stessi colori del login) ----
+  error-color: "#ef4444"
+  warning-color: "#f59e0b"
+  success-color: "#10b981"
+  info-color: "var(--mmoui-accent-2)"
+
+  # ---- Grafici ----
+  graph-color-1: "#6366f1"
+  graph-color-2: "#22d3ee"
+  graph-color-3: "#a855f7"
+  graph-color-4: "#10b981"
+  graph-color-5: "#f59e0b"
+  graph-color-6: "#ec4899"
+  graph-color-7: "#3b82f6"
+  graph-color-8: "#14b8a6"
+  history-unknown-color: "var(--disabled-text-color)"
+  history-unavailable-color: "transparent"
+
+  modes:
+    light:
+      primary-background-color: "#f6f7fc"
+      secondary-background-color: "#eceef8"
+      card-background-color: "#ffffff"
+      ha-card-background: "rgba(255, 255, 255, 0.86)"
+      ha-card-border-color: "rgba(22, 27, 51, 0.08)"
+      ha-card-box-shadow: "0 14px 34px -22px rgba(22, 27, 51, 0.35)"
+      primary-text-color: "#161b33"
+      rgb-primary-text-color: "22, 27, 51"
+      secondary-text-color: "#5b6382"
+      text-primary-color: "#ffffff"
+      disabled-text-color: "#a3aac4"
+      divider-color: "rgba(22, 27, 51, 0.12)"
+      outline-color: "rgba(22, 27, 51, 0.12)"
+      input-fill-color: "#ffffff"
+      mdc-text-field-fill-color: "#ffffff"
+      code-editor-background-color: "#ffffff"
+      markdown-code-background-color: "#eceef8"
+      table-row-background-color: "#ffffff"
+      table-row-alternative-background-color: "#f6f7fc"
+      clear-background-color: "#ffffff"
+      # Aurore tenui sullo sfondo delle dashboard
+      lovelace-background: >-
+        radial-gradient(40% 45% at 8% 0%, rgba(34, 211, 238, 0.24), transparent 70%) fixed,
+        radial-gradient(40% 45% at 100% 10%, rgba(168, 85, 247, 0.20), transparent 70%) fixed,
+        radial-gradient(55% 50% at 50% 110%, rgba(99, 102, 241, 0.22), transparent 70%) fixed,
+        #f6f7fc
+
+    dark:
+      primary-background-color: "#0b1022"
+      secondary-background-color: "#0f152c"
+      card-background-color: "#0f152c"
+      ha-card-background: "rgba(15, 21, 44, 0.78)"
+      ha-card-border-color: "rgba(255, 255, 255, 0.08)"
+      ha-card-box-shadow: "0 18px 40px -24px rgba(0, 0, 0, 0.8)"
+      primary-text-color: "#e6e9f5"
+      rgb-primary-text-color: "230, 233, 245"
+      secondary-text-color: "#9aa3c0"
+      text-primary-color: "#ffffff"
+      disabled-text-color: "#5b6382"
+      divider-color: "rgba(255, 255, 255, 0.10)"
+      outline-color: "rgba(255, 255, 255, 0.12)"
+      input-fill-color: "rgba(255, 255, 255, 0.04)"
+      mdc-text-field-fill-color: "rgba(255, 255, 255, 0.04)"
+      code-editor-background-color: "#0b1022"
+      markdown-code-background-color: "#070b1a"
+      table-row-background-color: "#0f152c"
+      table-row-alternative-background-color: "#0b1022"
+      clear-background-color: "#0b1022"
+      state-icon-color: "#818cf8"
+      # Aurore più intense, come nel pannello brand del login
+      lovelace-background: >-
+        radial-gradient(38% 42% at 10% 0%, rgba(34, 211, 238, 0.34), transparent 70%) fixed,
+        radial-gradient(42% 45% at 100% 15%, rgba(168, 85, 247, 0.32), transparent 70%) fixed,
+        radial-gradient(60% 55% at 50% 115%, rgba(99, 102, 241, 0.42), transparent 70%) fixed,
+        #070b1a
